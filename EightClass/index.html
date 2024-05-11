@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> CLASS8 ADVANCE FORM </title>
+		<title>CL8-FORM2</title>
 	</head>
 
 	<body>
+
 		<style>
 			body{
 				font-family: monospace;
@@ -13,99 +14,106 @@
 			}
 			.outercontainer{
 				width: 100%;
-				margin-top: 40px;
+				margin-top: 50px;
 			}
 
 			.innercontainer{
-				width: 30%;
-				padding: 20px;
-				border: 3px solid blue ;
-				text-align: center;
 				margin: auto;
-			}
-
-			.selectbox{
-				width: 200px;
-				height: 30px;
-				border: 2px solid grey;
-				border-radius: 5px;
-				font-size: 15px;
+				border: 3px solid blue;
+				border-radius: 7px;
+				width: 35%;
+				padding: 40px;
 				text-align: center;
 			}
 			.myin{
-				width: 300px;
+				width: 320px;
 				height: 20px;
-				padding: 5px;
-				border: 2px solid grey;
-				border-radius: 5px;
+				padding: 10px;
+				text-align: center;
 				font-size: 20px;
-				margin-bottom: 5px;
-			}
-			.mybutton{
-				padding: 10px 25px;
-				border: none;
-				border-radius: 5px;
-				color: white;
-				background-color: darkslateblue;
-				font-size: 15px;
 			}
 			label{
 				font-size: 20px;
 			}
+			.myselect{
+				width: 200px;
+				height: 30px;
+				border: 3px solid grey;
+				border-radius: 7px;
+				font-size: 15px;
+				text-align: center;
+				box-shadow: 5px 5px 5px grey;
+			}
 
+			.mybutton{
+				padding: 10px 25px;
+				border: none;
+				font-size: 15px;
+				border-radius: 7px;
+				color: white;
+				font-weight: bolder;
+				background: linear-gradient(red,blue);
+			}
+			h3{
+				font-size: 20px;
+			}
 		</style>
-
 		<div class="outercontainer">
 			<div class="innercontainer">
-				<h1>Plane Ticket Booking</h1>
-				<form class="myform">
-					<input class="myin" type="text" placeholder="First Name" name="fname"> <br>
-					<input class="myin" type="text" placeholder="Last  Name" name="lname"> <br>
-					<input class="myin" type="email" placeholder="email" name="email"> <br>
-					<input class="myin" type="password" placeholder="Password" name="password"> <br>
-					<input class="myin" type="number" placeholder="Contact Number" name="cnumber"> <br>
+				<img src="./logo.png" width="50%">
+				<h1>Air Ticket Booking</h1>
+				<form class="myform" method="POST" action="contact.html">
+					<input class="myin" name="fname" type="text" placeholder="First Name">
 					<br>
-					<h3>Gender </h3>
-					<label>
-						<input  type="radio" name="gender" value="male">Male
-					</label>
-					<label>
-						<input  type="radio" name="gender" value="female">Female
-					</label>
+					<br>
+					<input class="myin"  name="lname" type="text" placeholder="Last Name">
+					<br>
+					<br>
+					<input class="myin" name="email" type="email" placeholder="Email">
+					<br>
+					<br>
+					<input class="myin" name="pass" type="password" placeholder="Enter password">
+					<br>
+					<br>
+					<input class="myin" name="ph" type="number" placeholder="contact">
 
-					<h3>Choose Meal </h3>
-					<label> <input type="checkbox" name="meal" value="rice">Rice </label>
-					<label> <input type="checkbox" name="meal" value="beef">Beef </label>
-					<label> <input type="checkbox" name="meal" value="chicken">Chicken </label>
-					<label> <input type="checkbox" name="meal" value="sprite">Sprite </label>
-					<label> <input type="checkbox" name="meal" value="pepsi">Pepsi </label>
+					<br>
+					<h3> Gender </h3>
 
+					<label> <input type="radio" name="gender" value="male">Male </label>
+					<label> <input type="radio" name="gender" value="female">Female </label>
+					<br>
+					<h3> Choose Meal </h3>
+					<label><input type="checkbox" name="meal" value="rice">Rice </label>
+					<label><input type="checkbox" name="meal" value="beef">Beef </label>
+					<label><input type="checkbox" name="meal" value="chicken">Chicken </label>
+					<label><input type="checkbox" name="meal" value="pepsi">Pepsi </label>
+					<label><input type="checkbox" name="meal" value="sprite">Sprite </label>
+					<br>
 					<h3>Boarding From </h3>
-					<select class="selectbox">
+					<select name="from" class="myselect">
 						<option>Choose</option>
 						<option value="1">Dhaka</option>
-						<option value="2">Chiitagong</option>
+						<option value="2">Chittagong</option>
 						<option value="3">Sylhet</option>
 						<option value="4">Jessore</option>
 						<option value="5">Saidpur</option>
-						<option value="6">Barisal</option>
-
+						<option value="5">Cox Bazar</option>
 					</select>
-
-					<h3>Destination </h3>
-					<select class="selectbox">
+					<br>
+					<h3> Destination </h3>
+					<select name="to" class="myselect">
 						<option>Choose</option>
 						<option value="1">Dhaka</option>
-						<option value="2">Chiitagong</option>
+						<option value="2">Chittagong</option>
 						<option value="3">Sylhet</option>
 						<option value="4">Jessore</option>
 						<option value="5">Saidpur</option>
-						<option value="6">Barisal</option>
-
+						<option value="5">Cox Bazar</option>
 					</select>
 					<br>
 					<br>
-					<input class="mybutton" type="submit" name="submit" value="Submit">
+					<input class="mybutton" type="submit" name="submit" value="Get Ticket">
 				</form>
 			</div>
 		</div>
