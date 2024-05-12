@@ -1,0 +1,36 @@
+body{
+	font-family: monospace;
+}
+
+nav{
+	background-color: lightgreen;
+	border: 2px solid green;
+	border-radius: 10px;
+	margin: 0;
+	padding: 10px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	display: inline;
+	margin-left: 50px;
+	margin-right: 90px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bolder;
+	padding: 5px;
+	text-align: center;
+}
+nav ul li a:hover{
+	color: red;
+	border: 2px solid red;
+	border-radius: 10px;
+
+}
