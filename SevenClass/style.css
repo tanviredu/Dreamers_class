@@ -1,0 +1,17 @@
+body{
+	font-family: monospace;
+	font-size: 15px;
+	background: url("./back3.jpg");
+	background-repeat: no-repeat;
+}
+
+.outercontainer{
+	width: 100%;
+}
+.innercontainer{
+	margin: auto;
+	border: 5px solid blue;
+	max-width: 35%;
+	padding: 40px;
+	text-align: center;
+}

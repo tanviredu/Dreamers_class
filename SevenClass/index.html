@@ -1,93 +1,65 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CL-7-BASIC-FORM</title>
+		<title>CLS7-BASIC FORM</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
 	</head>
 	<body>
-		<style>
-			body{
-				background: url("./back3.jpg");
-				background-repeat: no-repeat;
-				font-family: monospace;
-				font-size: 20px;
-			}
-			.outercontainer{
-				width: 100%;
-				margin-top: 30px;
-			}
-
-			.innercontainer{
-				margin: auto;
-				border: 5px solid black;
-				max-width:500px;
-				padding: 40px;
-				text-align: center;
-			}
-
-		</style>
-
 		<div class="outercontainer">
-
 			<div class="innercontainer">
 				<h1>Plane Ticket Booking</h1>
-				<form>
-					<label> 
-						First Name : 
-						<input type="text">
+				<form method="POST" action="contact.html">
+					<label>
+						First Name :
+						<input type="text" name="fname">
 					</label>
 					<br>
+					<br>
 					<label>
-						Last Name :
-						<input type="text" >
+						Last Name : 
+						<input type="text" name="lname" >
 					</label>
+					<br>
 					<br>
 					<label>
 						Email :
-						<input type="email">
+						<input type="email" name="email"> 
 					</label>
+					<br>
 					<br>
 
 					<label>
 						Password :
-						<input type="password" >
+						<input type="password" name="pass" >
 					</label>
+
+					<br>
 					<br>
 					<label>
-						Contact :
-						<input type="number">
+						Contact
+						<input type="number" name="contact">
 					</label>
 					<br>
-					<h3>Gender </h3>
+					<br>
+					<h3>Gender</h3>
 					<label>
-						<input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="male"> Male
 					</label>
 					<label>
 						<input type="radio" name="gender" value="female"> Female
 					</label>
 					<br>
-
-					<h3> Choose Meal (Any Three)</h3>
-					<label>
-						<input type="checkbox" name="meal" value="rice"> Rice
-					</label>
-
-					<label>
-						<input type="checkbox" name="meal" value="beef"> Beef
-					</label>
-
-					<label>
-						<input type="checkbox" name="meal" value="chicken"> Chicken
-					</label>
-					<label>
-						<input type="checkbox" name="meal" value="pepsi"> Pepsi
-					</label>
-					<label>
-						<input type="checkbox" name="meal" value="sprite"> Sprite
-					</label>
+					<br>
+					<h3>Choose Meal</h3>
+					<label> <input type="checkbox" name="meal" value="rice" >Rice</label>
+					<label> <input type="checkbox" name="meal" value="beef" >Beef</label>
+					<label> <input type="checkbox" name="meal" value="chicken" >Chicken</label>
+					<label> <input type="checkbox" name="meal" value="pepsi" >Pepsi</label>
+					<label> <input type="checkbox" name="meal" value="Sprite" >Sprite</label>
 					<br>
 					<br>
+					<input type="submit" name="submit" value="Order Ticket">
 
-					<button>Submit</button>
 				</form>
 			</div>
 		</div>
